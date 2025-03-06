@@ -1,15 +1,4 @@
 <?php
-// $lang = [
-//     "logo" => "CiberToMultilingual",
-//     "cambiar_idioma" => "Llenguatge",
-//     "cambiar" => "Canviar",
-//     "opcion_1" => "Seleccionar",
-//     "opcion_2" => "Castellano ",
-//     "opcion_3" => "Catalan",
-//     "descripcion" => "Hola, Aquest es el titol en Calata",
-//     "m1" => "Home",
-//     "m2" => "Producte"
-// ];
 
 $langhome = [
     "logo" => "CiberToMultilingual",

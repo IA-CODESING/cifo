@@ -1,9 +1,9 @@
 <?php
 
-require_once ":/assets/gestor.php"
+require "./gestor.tpl";
 
-cabecera($lang);
-principal($langproduct);
-footer($langproduct);
+cabecera($langhome);
+principal($langhome);
+footer($langhome);
 
 ?>
