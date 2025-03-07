@@ -1,29 +1,33 @@
 <?php
-require_once "funciones.php";
-
+require_once "assets/functions.php";
 session_start();
 
-if(isset($_POST['error'])){
-    $error = $GET['error'];
+if (isset($_GET['error'])) {
+  $error = $_GET['error'];
 
-    $nombre = $_SESSION['nombre'];
-    $apellidos = $_SESSION['apellidos'];
-    $edad = $_SESSION['edad'];
-    $email = $_SESSION['email'];
-    $pass = $_SESSION['pass'];
+  $nombre = $_SESSION['nombre'];
+  $apellidos = $_SESSION['apellidos'];
+  $edad = $_SESSION['edad'];
+  $email = $_SESSION['email'];
+  $pass = $_SESSION['pass'];
+  
+  pDump($nombre);
+  pDump($apellidos);
+  pDump($edad);
+  pDump($email);
+  pDump($pass);
 
-    pDump($nombre);
-    pDump($apellidos);
-    pDump($edad);
-    pDump($email);
-    pDump($pass);
+  echo ('ERRORUM' == $error)? '<strong style="color:red">Introduce todos los datos en todos los campos del formulario</strong>':'';
+  echo ('nombre' == $error)? '<strong style="color:red">Introduce bien el nombre</strong>':'';
+    echo ('nombre' == $error)? '<strong style="color:red">Introduce bien el nombre</strong>':'';
+  
+    echo ('apellidos' == $error)? '<strong style="color:red">Los apellidos no son correctos</strong>':'';
+  
+    echo ('edad' == $error)? '<strong style="color:red">Introduce una edad correcta</strong>':'';
 
-    echo ('ERRORUM' == $error)? '<trong stryle="color:red;">Introduce todos los datos en todos los campos del formulario</trong>' : '';
-    echo ('nombre' == $error)? '<trong stryle="color:red;">Introduce El nombre</trong>' : '';
-    echo ('apellido' == $error)? '<trong stryle="color:red;">Introduce El apellido</trong>' : '';
-    echo ('edad' == $error)? '<trong stryle="color:red;">Introduce tu edad</trong>' : '';
-    echo ('password' == $error)? '<trong stryle="color:red;">Introduce una contraseña valida</trong>' : '';
-
+        echo ('email' == $error)? '<strong style="color:red">El correo es erroneo</strong>':'';
+          echo ('password' == $error)? '<strong style="color:red">Introduce una contraseña de más de 5 caracteres</strong>':'';
+  
 }
-?>
 
+?>
