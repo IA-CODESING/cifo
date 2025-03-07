@@ -6,6 +6,6 @@ $mensaje = $_POST['mensaje'];
 
 // print_r($_POST);
 
-print_r ($nombre . $email . $mensaje;)
+print_r ($nombre . $email . $mensaje);
 
 ?>

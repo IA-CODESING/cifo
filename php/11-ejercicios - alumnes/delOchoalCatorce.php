@@ -1,35 +1,23 @@
 <?php
+require_once 'function.php';
 
-function pDump($variable) {
-    echo "<pre>";
-    var_dump($variable) ;
-    echo "</pre>";
-}
-
+echo '<p>Ejercicio 8. Hacer un programa en PHP que tenga un array con 8 numeros enteros no consecutivos ni ordenados y crear una función  que haga lo siguiente:</p>';
 $nums = [1,6,7,9,8,0,3,2];
 
+echo '<h3>Ejercicio 8.1</h3>';
+echo '<p>Recorrerlo y mostrarlo al final del bucle imprimiendo la variable que contiene todo el recorrido</p>';
 pDump($nums);
 
+echo '<h3>Ejercicio 8.2</h3>';
 foreach ($nums as $key) {
     echo "$key </br>";
 };
-
+echo '<h3>Ejercicio 8.3</h3>';
 echo count($nums, COUNT_RECURSIVE);
+
+
+echo '<h3>Ejercicio 8.4 y 8.5</h3>';
+require 'delOchoalOnceparams.php';
 
 ?>
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-</head>
-<body>
-
-    <form action="">
-        
-    </form>
-    
-</body>
-</html>

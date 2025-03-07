@@ -20,8 +20,9 @@ $langhome = [
     "opcion_3" => "Catalan",
     "descripcion" => "Hello, This is the title in Spanish",
     "m1" => "Home",
-    "m2" => "Product"
-    "title" => "Multilanguage selection system",
+    "m2" => "Product",
+    "title" => "Multilanguage",
+    "selection" =>" system",
     "titular" => "Index page title",
     "cont1" => "Home content",
     "cont2" => "Home content 2",
@@ -38,13 +39,13 @@ $langproduct = [
     "opcion_3" => "Catalan",
     "descripcion" => "Hello, This is the title in Spanish",
     "m1" => "Home",
-    "m2" => "Product"
+    "m2" => "Product",
     "title" => "Multilanguage selection system",
     "titular" => "Index page title",
     "cont1" => "Home content",
     "cont2" => "Home content 2",
     "cont3" => "Home content 3",
-    "foot2" => "Footer2 text of the index page"
+    "foot2" => "Footer2 text of the index page",
     "foot3" => "Footer3 text of the index page"
 ];
 
