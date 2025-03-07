@@ -19,5 +19,12 @@ echo count($nums, COUNT_RECURSIVE);
 echo '<h3>Ejercicio 8.4 y 8.5</h3>';
 require 'delOchoalOnceparams.php';
 
+
+echo '<p>Ejercicio 9. Escribir un programa con PHP que añada valores a un array ya existente ,mientras que su longuitud sea menor a 15 y luego mostrarlo por pantalla.</p>';
+
+$words = ['palabra', 'edificio', 'total'];
+pDump($words);
+
+
 ?>
 
